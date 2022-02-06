@@ -1,0 +1,47 @@
+.d-flex {
+    display: flex!important;
+}
+
+.justify-content-center {
+    justify-content: center!important;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-direction-column {
+    flex-direction: column!important;
+}
+
+.flex-direction-row {
+    flex-direction: row!important;
+}
+
+.position-absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.color-white {
+    color: white!important;
+}
+
+.btn {
+    border-radius: 10px;
+    color: white;
+}
+
+.height-100 {
+    height: 100%;
+}

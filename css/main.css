@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-primary {
+    background-color: #276678!important;
+}
+
+.bg-primary-opacity-25 {
+    background-color: rgba(39, 102, 120, 0.25);
+}
+
+.bg-primary-opacity-50 {
+    background-color: rgba(39, 102, 120, 0.5);
+}
+
+.bg-primary-opacity-75 {
+    background-color: rgba(39, 102, 120, 0.75);
+}
+
+.sections-container {
+    scroll-snap-type: y mandatory;
+    /* scroll-padding-top: 15vh; */
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.page-about {}
+
+.page-contact {}
+
+section {
+    height: 100vh;
+    scroll-snap-align: end;
+}
+
+#first-name {
+    font-size: 6em;
+    font-family: 'Better Grade', 'Open Sans', sans-serif;
+}
+
+.header-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+}
+
+.header-links a {
+    margin-right: 1em;
+    /*margin-top: 60px; */
+}
+
+.section-header {
+    margin-top: 1em;
+    color: white;
+    font-family: 'Better Grade', 'Open Sans', sans-serif;
+    font-size: 4em;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#page-about-text {
+    margin-top: 4em;
+    color: white;
+}
+
+#check-my-cv-button {
+    margin-top: 4em;
+}
+
+#page-about-image {
+    width: 30%;
+    /* align-self: end; */
+    /* justify-self: center; */
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-text-container {
+    padding: 4em;
+}
