@@ -130,12 +130,12 @@ footer {
 .social-media-icon {
     font-size: 1.4em;
     border-radius: 100%;
-    border: 4px solid black;
+    /*border: 4px solid rgba(39, 102, 120, 0.5);
+    ;*/
     width: 2em;
-    height: 2em;
     text-align: center;
-    line-height: 1.6em;
-    color: black;
+    line-height: 1.9em;
+    color: rgba(39, 102, 120, 0.5);
     vertical-align: center;
     background: white;
     text-decoration: none;
@@ -143,9 +143,16 @@ footer {
 }
 
 .social-media-icon:hover {
-    background-color: black;
-    color: white;
+    /* background-color: rgba(39, 102, 120, 0.5);
+    ;
+    color: white;*/
     text-decoration: none;
+}
+
+#image-contact-bottom-container {
+    position: absolute!important;
+    bottom: 0!important;
+    left: 4em!important;
 }
 
 .social-media-icon:focus {

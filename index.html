@@ -12,9 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="./css/birds.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/helper.css" />
+
 </head>
 
 <body>
@@ -22,30 +24,50 @@
     <div class="sections-container">
 
         <section class="page page-home position-relative">
-            <div class="header-links">
-                <a>About</a>
-                <a>Portfolio</a>
-                <a>Contact</a>
+            <div class="birds-container">
+
+
+                <div class="bird-container bird-container--one">
+                    <div class="bird bird--one"></div>
+                </div>
+
+                <div class="bird-container bird-container--two">
+                    <div class="bird bird--two"></div>
+                </div>
+
+                <div class="bird-container bird-container--three">
+                    <div class="bird bird--three"></div>
+                </div>
+
+                <div class="bird-container bird-container--four">
+                    <div class="bird bird--four"></div>
+                </div>
+
             </div>
-            <div class="position-absolute-center text-align-center">
+            <div class="header-links hidden">
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="position-absolute-center text-align-center hidden">
                 <h1 id="first-name">Bojan Balinovic</h1>
                 <br />
                 <h2>Full-Stack Developer</h2>
             </div>
         </section>
-        <section class="page page-about  d-flex flex-direction-column bg-primary-opacity-25 position-relative">
+        <section id="about" class="page page-about  d-flex flex-direction-column bg-primary-opacity-25 position-relative">
 
-            <div class="text-center">
+            <div class="text-center ">
                 <!-- <h1 class="section-header">About</h1> -->
-                <h1 id="page-about-text">Hi, my name is Bojan. <br /> I am a Full-Stack Developer.</h1>
+                <h1 id="page-about-text" class="hidden">Hi, my name is Bojan. <br /> I am a Full-Stack Developer.</h1>
 
             </div>
-            <div class="bottom-center-container w-100">
+            <div class="bottom-center-container w-100 hidden">
                 <div class="row justify-content-center ">
                     <a class="btn bg-primary color-white" href="./files/cv.pdf" id="check-my-cv-button">Check my CV (217
                         KB)</a>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center hidden">
 
 
                     <div class="col-lg-6">
@@ -56,11 +78,11 @@
 
 
         </section>
-        <section class="page page-portfolio d-flex flex-direction-column bg-primary-opacity-75 position-relative">
-            <h1 class="section-header text-center ">Portfolio</h1>
-            <div class="row d-flex align-items-center height-100 portfolio-text-container">
+        <section id="portfolio" class="page page-portfolio d-flex flex-direction-column bg-primary-opacity-75 position-relative">
+            <h1 class="section-header text-center hidden">Portfolio</h1>
+            <div class="row d-flex align-items-center height-100 portfolio-text-container hidden">
                 <div class="col-lg-6 ">
-                    <h1 class="color-white ">Fleet-Locator</h1>
+                    <h1 class="color-white hidden">Fleet-Locator</h1>
                     <h3 class="color-white ">Fleet managment app. Locate and manage your vehicle fleet. Get your vehicles monthly/yearly report.</h2>
                         <a class="btn btn-primary" href="https://fleet-locator.com ">Visit</a>
                 </div>
@@ -88,7 +110,7 @@
         </section>
         <section class="page page-portfolio-2 d-flex flex-direction-column position-relative ">
 
-            <div class="row d-flex align-items-center height-100 portfolio-text-container">
+            <div class="row d-flex align-items-center height-100 portfolio-text-container hidden">
                 <div class="col-lg-6 ">
                     <h1 class="color-white ">DN Spargel-Tracker</h1>
                     <h3 class="color-white ">DN Spargel-Tracker monitors the temperatures in the asparagus dam for you. It lets you keep an eye on your asparagus and gives you peace of mind. Temperature sensors at four different depths allow precise and reliable measurement throughout
@@ -118,38 +140,39 @@
         </section>
 
         <section class="page page-portfolio d-flex flex-direction-column bg-primary-opacity-50 position-relative">
-            <br />
-            <br />
-            <div class="row justify-content-center color-white">
-                <div class="col-lg-2 d-flex">
-                    <img class="w-100 align-self-center" src="/images/device-shots/fotopload-desktop.png" />
+            <div class="position-absolute-center ">
+                <div class="dropdown-divider"></div>
+                <div class="row justify-content-center color-white hidden">
+                    <div class="col-lg-2 d-flex">
+                        <img class="w-100 align-self-center" src="/images/device-shots/fotopload-desktop.png" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h1>Fotopload</h1>
+                        <h3>One of my earliest work. Fotopload is platform for sharing pictures.</h3>
+                        <btn class="btn btn-primary" href="https://fleet-locator.com ">Preview</btn>
+                    </div>
                 </div>
-                <div class="col-lg-7">
-                    <h1>Fotopload</h1>
-                    <h3>One of my earliest work. Fotopload is platform for sharing pictures.</h3>
-                    <btn class="btn btn-primary" href="https://fleet-locator.com ">Preview</btn>
+                <br />
+                <div class="dropdown-divider hidden"></div>
+                <br />
+                <div class="row justify-content-center color-white hidden">
+                    <div class="col-lg-2 d-flex justify-content-center">
+                        <img id="image-blueby-mobile" class="align-self-center" src="/images/device-shots/blueby-mobile.png" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h1>Blueby</h1>
+                        <h3>Side-project made in Unity.</h3>
+                        <btn class="btn btn-primary" href="https://fleet-locator.com ">Preview</btn>
+                        <btn class="btn btn-primary" href="https://fleet-locator.com ">Download</btn>
+                    </div>
                 </div>
+                <br />
+                <div class="dropdown-divider"></div>
             </div>
-            <br />
-            <div class="dropdown-divider"></div>
-            <br />
-            <div class="row justify-content-center color-white">
-                <div class="col-lg-2 d-flex justify-content-center">
-                    <img id="image-blueby-mobile" class="align-self-center" src="/images/device-shots/blueby-mobile.png" />
-                </div>
-                <div class="col-lg-7">
-                    <h1>Blueby</h1>
-                    <h3>Side-project made in Unity.</h3>
-                    <btn class="btn btn-primary" href="https://fleet-locator.com ">Preview</btn>
-                    <btn class="btn btn-primary" href="https://fleet-locator.com ">Download</btn>
-                </div>
-            </div>
-            <br />
-            <div class="dropdown-divider"></div>
         </section>
-        <section class="page page-contact bg-primary-opacity-75 position-relative">
-            <h1 class="section-header text-center " id="contact-header-section">Contact</h1>
-            <div class="row justify-content-center position-absolute-center w-100">
+        <section id="contact" class="page page-contact bg-primary-opacity-75 position-relative">
+            <h1 class="section-header text-center hidden " id="contact-header-section">Contact</h1>
+            <div class="row justify-content-center position-absolute-center w-100 z-index-1 hidden">
                 <div class="col-lg-8 bg-white">
                     <form id="contact-form">
                         <div class="row">
@@ -180,16 +203,29 @@
                     </form>
                 </div>
             </div>
+            <div id="image-contact-bottom-container" class="row z-index-0 hidden">
+                <div class="col-lg-5">
+                    <img src="/images/resource2.png" class="w-100" />
+                </div>
+
+            </div>
+
         </section>
         <footer class="position-relative">
             <div class="position-absolute-center">
-                <a href="#" class="fa fa-github social-media-icon"></a>
-                <a href="#" class="fa fa-linkedin social-media-icon"></a>
-                <a href="#" class="fa fa-envelope social-media-icon"></a>
-                <a href="#" class="fa fa-envelope social-media-icon"></a>
+                <a href="https://github.com/bojan-balinovic" class="fa fa-github social-media-icon"></a>
+                <a href="https://www.linkedin.com/in/bojan-b-496425122" class="fa fa-linkedin social-media-icon"></a>
+                <a href="mailto:bojanbalinovic1@gmail.com" class="fa fa-envelope social-media-icon"></a>
+                <span class="color-white">bojanbalinovic1@gmail.com</span>
+                <button class="btn btn-primary border-radius-100"><i class="fa fa-solid fa-copy"></i></button>
+                <br/>
+                <br/>
+                <br/>
+                <div class="color-white text-center">Handcrafted by me.</div>
             </div>
         </footer>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
