@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bojan Balinovic</title>
+    <link rel="shortcut icon" type="image/jpg" href="./favicon.ico" />
+
     <link href="http://fonts.cdnfonts.com/css/better-grade" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -83,8 +85,10 @@
             <div class="row d-flex align-items-center height-100 portfolio-text-container hidden">
                 <div class="col-lg-6 ">
                     <h1 class="color-white hidden">Fleet-Locator</h1>
-                    <h3 class="color-white ">Fleet managment app. Locate and manage your vehicle fleet. Get your vehicles monthly/yearly report.</h2>
-                        <a class="btn btn-primary" href="https://fleet-locator.com ">Visit</a>
+                    <h3 class="color-white ">Fleet managment app. Locate and manage your vehicle fleet. Get your vehicles monthly/yearly report.
+                        <a class="btn btn-primary" href="https://fleet-locator.com " target="_blank">Visit</a>
+                        </h2>
+
                 </div>
                 <div class="col-lg-4 offset-lg-2 ">
 
@@ -98,11 +102,15 @@
                     <br />
                     <div class="row justify-content-center">
                         <div class="col-lg-4">
-                            <img class="w-100" src="/images/icons/google-plays.png" />
+                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.oculus.fleetlocator">
+                                <img class="max-width-100 h-100" src="/images/icons/google-plays.png" />
 
+                            </a>
                         </div>
                         <div class="col-lg-4">
-                            <img class="w-100" src="/images/icons/app-store.png" />
+                            <a target="_blank" href="https://apps.apple.com/us/app/fleet-locator/id1588673537">
+                                <img class="max-width-100 h-100" src="/images/icons/app-store.png" /></a>
+
                         </div>
                     </div>
                 </div>
@@ -128,11 +136,19 @@
                     <br />
                     <div class="row justify-content-center">
                         <div class="col-lg-4">
-                            <img class="w-100" src="/images/icons/google-plays.png" />
+
+                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.dn.spargeltracker">
+
+                                <img class="max-width-100 h-100" src="/images/icons/google-plays.png" />
+                            </a>
 
                         </div>
                         <div class="col-lg-4">
-                            <img class="w-100" src="/images/icons/app-store.png" />
+
+                            <a target="_blank" href="https://apps.apple.com/us/app/dn-spargel-tracker/id1545918011">
+
+                                <img class="max-width-100 h-100" src="/images/icons/app-store.png" />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -140,6 +156,20 @@
         </section>
 
         <section class="page page-portfolio d-flex flex-direction-column bg-primary-opacity-50 position-relative">
+            <div class="modal" tabindex="-1" role="dialog" id="fotopload">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <img src="/images/device-shots/fotopload-desktop2.png" class="w-100" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal" tabindex="-1" role="dialog" id="blueby">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <img src="/images/device-shots/blueby-mobile.png" class="w-100" />
+                    </div>
+                </div>
+            </div>
             <div class="position-absolute-center ">
                 <div class="dropdown-divider"></div>
                 <div class="row justify-content-center color-white hidden">
@@ -149,7 +179,7 @@
                     <div class="col-lg-7">
                         <h1>Fotopload</h1>
                         <h3>One of my earliest work. Fotopload is platform for sharing pictures.</h3>
-                        <btn class="btn btn-primary" href="https://fleet-locator.com ">Preview</btn>
+                        <btn class="btn btn-primary" href="https://fleet-locator.com " onclick="preview('fotopload')">Preview</btn>
                     </div>
                 </div>
                 <br />
@@ -162,8 +192,22 @@
                     <div class="col-lg-7">
                         <h1>Blueby</h1>
                         <h3>Side-project made in Unity.</h3>
-                        <btn class="btn btn-primary" href="https://fleet-locator.com ">Preview</btn>
-                        <btn class="btn btn-primary" href="https://fleet-locator.com ">Download</btn>
+                        <btn class="btn btn-primary" href="https://fleet-locator.com " onclick="preview('blueby')">Preview</btn>
+                        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.rickystudios.blueby" target="_blank">Download</a>
+                    </div>
+                </div>
+                <br />
+                <div class="dropdown-divider"></div>
+                <br />
+                <div class="row justify-content-center color-white hidden">
+                    <div class="col-lg-2 d-flex justify-content-center">
+                        <img class="w-100 align-self-center" src="/images/device-shots/pizza.png" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h1>Pizz-a-tron</h1>
+                        <h3>Open source project for ordering pizza. Doesn't have a real world use, it only showcases my Angular skills.</h3>
+                        <a class="btn btn-primary" href="https://pizza-e0100.web.app/configurator">Visit</a>
+                        <a class="btn btn-primary" href="https://github.com/bojan-balinovic/pizza-a-tron" target="_blank">Check GitHub</a>
                     </div>
                 </div>
                 <br />
@@ -178,7 +222,6 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <h3>Name</h3>
-
                                 <input type="text" class="form-control" />
                             </div>
                             <div class="col-lg-6">
@@ -218,13 +261,15 @@
                 <a href="mailto:bojanbalinovic1@gmail.com" class="fa fa-envelope social-media-icon"></a>
                 <span class="color-white">bojanbalinovic1@gmail.com</span>
                 <button class="btn btn-primary border-radius-100"><i class="fa fa-solid fa-copy"></i></button>
-                <br/>
-                <br/>
-                <br/>
+                <br />
+                <br />
+                <br />
                 <div class="color-white text-center">Handcrafted by me.</div>
             </div>
         </footer>
     </div>
+    <script src="js/modal.js">
+    </script>
     <script src="js/main.js"></script>
 </body>
 

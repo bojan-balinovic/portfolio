@@ -29,4 +29,12 @@
     init();
     checkPosition();
     console.log('skjdkfj')
+
 })();
+
+function preview(app) {
+    var myModal = new Modal({
+        el: document.getElementById(app)
+    });
+    myModal.show();
+}
