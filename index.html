@@ -179,11 +179,13 @@
                     <div class="col-lg-7">
                         <h1>Fotopload</h1>
                         <h3>One of my earliest work. Fotopload is platform for sharing pictures.</h3>
-                        <btn class="btn btn-primary" href="https://fleet-locator.com " onclick="preview('fotopload')">Preview</btn>
+                        <btn class="btn btn-primary" href="https://fleet-locator.com " onclick="preview('fotopload')">
+                            Preview</btn>
                     </div>
                 </div>
                 <br />
                 <div class="dropdown-divider hidden"></div>
+
                 <br />
                 <div class="row justify-content-center color-white hidden">
                     <div class="col-lg-2 d-flex justify-content-center">
@@ -193,7 +195,8 @@
                     <div class="col-lg-7">
                         <h1>Blueby</h1>
                         <h3>Side-project made in Unity.</h3>
-                        <btn class="btn btn-primary" href="https://fleet-locator.com " onclick="preview('blueby')">Preview</btn>
+                        <btn class="btn btn-primary" href="https://fleet-locator.com " onclick="preview('blueby')">
+                            Preview</btn>
                         <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.rickystudios.blueby" target="_blank">Download</a>
                     </div>
                 </div>
@@ -219,29 +222,28 @@
             <h1 class="section-header text-center hidden " id="contact-header-section">Contact</h1>
             <div class="row justify-content-center position-absolute-center w-100 z-index-1 hidden">
                 <div class="col-lg-8 bg-white">
-                    <form id="contact-form">
+                    <form id="contact-form" action="https://formspree.io/f/xzbowzjz" method="POST">
                         <div class="row">
                             <div class="col-lg-6">
                                 <h3>Name</h3>
-                                <input type="text" class="form-control" />
+                                <input type="text" class="form-control" name="name" />
                             </div>
                             <div class="col-lg-6">
                                 <h3>E-Mail</h3>
-
-                                <input type="text" class="form-control" />
+                                <input type="text" class="form-control" name="email" />
                             </div>
                         </div>
                         <br />
                         <div class="row">
                             <div class="col-lg-12">
                                 <h3>Message</h3>
-                                <textarea id="contact-form-message" class="form-control" rows="3" required></textarea>
+                                <textarea id="contact-form-message" class="form-control" rows="3" required name="message"></textarea>
                             </div>
                         </div>
                         <br />
                         <div class="row justify-content-center">
                             <div class="col-lg-2">
-                                <button class="form-control btn btn-primary">Send</button>
+                                <button class="form-control btn btn-primary" type="submit">Send</button>
                             </div>
                         </div>
                     </form>
