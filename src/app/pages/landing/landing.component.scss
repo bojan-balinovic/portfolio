@@ -1,0 +1,15 @@
+header {}
+
+.background {
+    transform: translateZ(-10px) scale(2);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#first-name {
+    font-size: 6em;
+    font-family: 'Kaushan Script', 'Open Sans', sans-serif;
+}

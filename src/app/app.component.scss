@@ -1,0 +1,25 @@
+.sections-container {
+    // scroll-snap-type: y mandatory;
+    /* scroll-padding-top: 15vh; */
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+app-landing {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+section {
+    height: 500px;
+    background: white;
+    font-size: 2rem;
+    padding: 2rem;
+}
