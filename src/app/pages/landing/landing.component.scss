@@ -1,15 +1,33 @@
-header {}
+.avatar {
+    display: block;
+    height: 10rem;
+    width: 10rem;
+    line-height: 60px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
 
-.background {
-    transform: translateZ(-10px) scale(2);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
+.header {
+    color: white;
+    font-size: 2rem;
+    transform: rotate(-1deg);
+    margin-top: 2rem;
 }
 
 #first-name {
-    font-size: 6em;
+    font-size: 6rem;
     font-family: 'Kaushan Script', 'Open Sans', sans-serif;
+    transform: rotateY(45deg);
+    transform: rotate(-3deg);
+    color: white;
+}
+
+.social-media__icon {
+    font-size: 3em;
+    color: white;
+    margin: 0 1rem;
 }

@@ -1,3 +1,9 @@
-<!-- <h1 id="first-name">Bojan Balinovic</h1>
-    <h2>Full-Stack Developer</h2> -->
-<img [src]="'/assets/images/background.jpg'" class="background" />
+<img src="./assets/images/avatar.jpg" class="avatar" />
+<h1 id="first-name">Bojan Balinovic</h1>
+<br />
+<div class="header">Full-Stack Developer</div>
+<div class="social-media">
+    <a *ngFor="let icon of icons" [href]="icon.link" target="_blank">
+        <fa-icon [icon]="icon.value" class="social-media__icon"></fa-icon>
+    </a>
+</div>
