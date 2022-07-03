@@ -8,6 +8,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { BirdsComponent } from './shared/components/birds/birds.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { IntroductionComponent } from './pages/introduction/introduction.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     LandingComponent,
     ContactComponent,
     ProjectsComponent,
-    BirdsComponent
+    BirdsComponent,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule,
